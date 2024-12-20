@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio//khaled</title>
     <link rel="icon" href="img/logo_icon.png" />
-    <link rel="stylesheet" href="styleee.css" />
+    <link rel="stylesheet" href="css/styleee.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -26,42 +26,40 @@
     <header>
       <nav class="container">
         <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-        <div class="links">
+        <div class="links" id="links">
+          <span class="close_menu" onclick="open_colose_menu()"><i class="fa-solid fa-xmark"></i></span>
+          <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
           <a href="#" class="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <a href="#About">About</a>
+          <a href="#Services">Services</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
         </div>
         <div class="icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/share/1GMp5qxWxX/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/khaled_ahmed090/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:khaledahmid815@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <span class="icon_menu" onclick="open_colose_menu()"><i class="fa-solid fa-bars"></i></span>
         </div>
       </nav>
     </header>
     <div class="hero">
       <div class="container">
         <div class="div_Text">
-          <h4>Hello,i'm khaled</h4>
-          <h1><span>Web Devalbor</span></h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            earum iusto libero consectetur illo, ipsa expedita unde impedit
-            vitae pariatur!
-          </p>
+          <h4>Hello,i'm <span class="sp">khaled</span></h4>
+          <h1><span >Front-end developer</span></h1>
           <div class="btns">
-            <a href="#" class="btn"> hire me</a>
-            <a href="#" class="btn_no_bg">Download Resume</a>
+            <a href="#" class="btn"> Hire me</a>
+            <a href="img/سيرة ذاتية أبيض ورمادي بسيطة لمصمم جرافيك.pdf" class="btn_no_bg" download="">Download Resume</a>
           </div>
         </div>
         <div class="div_img">
-          <img class="person" src="pohot khaled.png " alt="" />
+          <img class="person" src="/img/tinywow_change_bg_photo_71517786.png " alt="" />
           <img class="bg_img" src="img/bg_img_home.png" alt="" />
         </div>
       </div>
     </div>
-    <section class="about">
+    <section class="about" id="About">
       <div class="container">
         <div class="div_text">
           <h5>about me</h5>
@@ -69,29 +67,32 @@
           <h2><span>I'm a Developer</span></h2>
           <h4>I Develop Application that Help People</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            repudiandae adipisci illo veritatis commodi ea culpa est odio
-            quibusdam! Alias cum perferendis natus asperiores expedita.
+            "Junior Web Developer and Information Systems graduate. Currently
+            learning programming with proficiency in HTML, CSS, and JavaScript.
+            Seeking an opportunity to enhance my technical skills and contribute to
+            innovative projects.!"
           </p>
           <ul>
             <li><i class="fa-solid fa-check"></i> Web Developement</li>
             <li><i class="fa-solid fa-check"></i>HTML</li>
             <li><i class="fa-solid fa-check"></i>CSS</li>
             <li><i class="fa-solid fa-check"></i>Js</li>
+            <li><i class="fa-solid fa-check"></i>React</li>
+            <li><i class="fa-solid fa-check"></i>Git GitHob</li>
           </ul>
           <a
-            href="سيرة ذاتية أبيض ورمادي بسيطة لمصمم جرافيك.pdf"
+            href="img/سيرة ذاتية أبيض ورمادي بسيطة لمصمم جرافيك.pdf"
             download
             class="btn"
             >Dwonload CV</a
           >
         </div>
         <div class="div_img">
-          <img src="pohot khaled.png" alt="" />
+          <img src="img/WhatsApp Image 2024-12-19 at 13.24.05_bd2d8b05.jpg" alt="" />
         </div>
       </div>
     </section>
-    <section class="Services">
+    <section class="Services" id="Services">
       <div class="container">
         <div class="top_section">
           <h2>Our <span>Services</span></h2>
@@ -109,7 +110,7 @@
           </div>
           <div class="box">
             <i class="fa-solid fa-rocket"></i>
-            <h3>Web Design</h3>
+            <h3>Front-end</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
               reprehenderit aliquid placeat soluta. Impedit repudiandae ullam
@@ -120,7 +121,7 @@
 
           <div class="box">
             <i class="fa-solid fa-code"></i>
-            <h3>Web Design</h3>
+            <h3>Back-end</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
               reprehenderit aliquid placeat soluta. Impedit repudiandae ullam
@@ -132,59 +133,99 @@
       </div>
     </section>
 
-    <section class="Projects">
+    <section class="Projects" id="Projects">
       <div class="container">
         <div class="top_section">
           <h2>Explore my Popular <span>Projects</span></h2>
         </div>
         <div class="project_box">
-          <img src="img/project1.jpg" alt="" />
+          <img src="img/Screenshot (10).png" alt="" />
           <div class="text">
             <h4><span>Product Design</span></h4>
-            <h3><a href="#"> Website Makeup Design</a></h3>
+            <h3><a href="https://khaledahmedali.github.io/I-phone/" target="_blank"> iPhone 13 Pro Max</a></h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              expedita voluptate fugit soluta eaque alias consequatur, quos
-              rerum!
+              Description:
+              Designed and developed a promotional landing page for the iPhone 13 Pro Max using HTML and CSS.
+              Key Features:
+              
+              Clean and visually appealing design reflecting Apple's branding.
+              Responsive layout for seamless display across devices.
+              Navigation bar with links to key sections: Home, Products, News, About, and Contact.
+              Highlighted product features with a prominent title, description, and product image.
+              Interactive color options showcasing available phone colors.
+              Skills Gained:
+              
+              Improved UI/UX design and responsiveness.
+              Enhanced CSS styling for visually consistent layouts.
+              Created user-friendly and interactive components.
+              
             </p>
-            <a href="" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="https://khaledahmedali.github.io/I-phone/"target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
           </div>
         </div>
         <div class="project_box project_box_2">
-          <img src="img/project2.jpg" alt="" />
+          <img src="img/Screenshot (11).png" alt="" />
           <div class="text">
             <h4><span>Product Design</span></h4>
-            <h3><a href="#"> Website Makeup Design</a></h3>
+            <h3><a href="https://khaledahmedali.github.io/cruds/" target="_blank"> Product Management System Project</a></h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              expedita voluptate fugit soluta eaque alias consequatur, quos
-              rerum!
+              Description:
+
+              Developed a CRUD-based Product Management System using HTML, CSS, and JavaScript.
+              Key Features:
+              
+              Input Fields: Allows users to enter product details such as title, price, taxes, ads, discount, count, and category.
+              Dynamic Calculations: Automatically calculates the total price based on user inputs.
+              Search Functionality: Supports searching by product title or category for better usability.
+              CRUD Operations:
+              Create: Add new products to the list.
+              Read: Display all added products in a table.
+              Update: Modify product details directly from the table.
+              Delete: Remove single or multiple products with ease.
+              User-Friendly Interface: Dark theme with organized buttons for create, search, and delete operations.
+              Skills Gained:
+              
+              Mastered JavaScript DOM manipulation for real-time updates.
+              Implemented CRUD operations efficiently.
+              Enhanced data validation and dynamic UI responsiveness.              
             </p>
-            <a href="" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+            <a href="https://khaledahmedali.github.io/cruds/"target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
           </div>
         </div>
         <div class="project_box">
-          <img src="img/project3.jpg" alt="" />
+          <img src="img/Screenshot (13).png" alt="" />
           <div class="text">
             <h4><span>Product Design</span></h4>
-            <h3><a href="#"> Website Makeup Design</a></h3>
+            <h3><a href="#"> X O Game</a></h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              expedita voluptate fugit soluta eaque alias consequatur, quos
-              rerum!
+              Description: An interactive (X--O) game developed using HTML, CSS and JavaScript.
+Features:
+Responsive design for different screen sizes.
+Dynamic gameplay with user-friendly interface.
+Game logic implemented to determine the winner or declare a draw.
+If a draw occurs, the game is automatically restarted to start over.
+Technical package: HTML, CSS and JavaScript.
+Highlights: Focus on creating a clean user interface with functional gameplay to enhance user experience.
             </p>
             <a href="" class="link"><i class="fa-solid fa-arrow-up"></i></a>
           </div>
         </div>
         <div class="project_box project_box_2">
-          <img src="img/project4.jpg" alt="" />
+          <img src="img/Screenshot (16).png" alt="" />
           <div class="text">
             <h4><span>Product Design</span></h4>
-            <h3><a href="#"> Website Makeup Design</a></h3>
+            <h3><a href="#">  Admin Dashboard</a></h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              expedita voluptate fugit soluta eaque alias consequatur, quos
-              rerum!
+             
+
+              Description: Developed an interactive admin dashboard for managing users, posts, products, and revenue data.
+              Features:
+              Clean and structured layout with a responsive design.
+              Sidebar navigation for easy access to different sections.
+              Data display in cards (users, posts, products, revenue) and a table format for detailed information.
+              Styled indicators for prices, counts, and other metrics using vibrant colors for readability.
+              Tech Stack: HTML, CSS, JavaScript .
+              Highlights: Focused on creating a user-friendly interface with an aesthetic design and clear categorization of data.
             </p>
             <a href="" class="link"><i class="fa-solid fa-arrow-up"></i></a>
           </div>
@@ -199,28 +240,27 @@
         <div class="soial_contact">
           <h2>Follow Me</h2>
           <div class="links">
-            <a href="mailto:khaledahmid815@gmail.com"><i class="fa-solid fa-envelope"></i>khaledahmid815@gmail.com</a>
-            <a href="tel:+201022793089"><i class="fa-solid fa-phone"></i>01022793089</a>
-            <a href="https://www.facebook.com/share/1GMp5qxWxX/"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+            <a href="mailto:khaledahmid815@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>khaledahmid815@gmail.com</a>
+            <a href="tel:+201022793089" target="_blank"><i class="fa-solid fa-phone"></i>01022793089</a>
+            <a href="https://www.facebook.com/share/1GMp5qxWxX/" target="_blank"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+            <a href="https://www.instagram.com/khaled_ahmed090/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
             <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
-            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
-
           </div>
         </div>
         
         <form action="">
           <div class="inpts_form">
-            <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Mobile Number">
-            <input type="text" placeholder="Subjebt">
-            <textarea name="" id="" rows="10" placeholder="Your Massage Here ..."></textarea>
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Mobile Number" required>
+            <input type="text" placeholder="Subjebt" required>
+            <textarea name="" id="" rows="10" placeholder="Your Massage Here ..." required></textarea>
 
           </div>
           <button class="btn"> Send Message</button>
         </form>
       </div>
     </section>
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
