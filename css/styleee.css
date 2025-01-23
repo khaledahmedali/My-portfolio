@@ -20,6 +20,8 @@ html {
     --black_color:#070707;
     --border-color:rgba(255,255,255,0.1);    
 }
+
+
 body{
     background:#131313;
 }
@@ -114,6 +116,9 @@ p{
 }
 .bg-lines span:nth-child(9){
     left: 90%;
+}
+.bg-lines span:nth-child(10){
+    left:100%;
 }
  @keyframes left_Right {
     0%{
@@ -229,6 +234,18 @@ header nav .icons a:hover{
     border-radius: 0 0 600px 600px;
     overflow: hidden;
 
+}
+
+.hero .container.div_img .button1{
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        color: white;
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+        display:none ;
 }
 .hero .div_img .bg_img{
     position: absolute;
